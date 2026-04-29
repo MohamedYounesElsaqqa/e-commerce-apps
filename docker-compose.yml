@@ -6,7 +6,7 @@ services:
     container_name: ms_pg_sql
     image: postgres
     environment:
-      POSTGRES_USER: Microservices
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
       PGDATA: /var/lib/postgresql/data
     volumes:
