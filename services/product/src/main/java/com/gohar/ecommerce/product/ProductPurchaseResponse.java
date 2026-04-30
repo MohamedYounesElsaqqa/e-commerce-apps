@@ -1,4 +1,14 @@
 package com.gohar.ecommerce.product;
 
-public record ProductPurchaseResponse() {
+import jakarta.validation.constraints.NotNull;
+
+import java.math.BigDecimal;
+
+public record ProductPurchaseResponse(
+        Integer productId,
+        String description,
+        String name,
+        BigDecimal price,
+        double quantity
+) {
 }
