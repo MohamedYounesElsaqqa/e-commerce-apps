@@ -31,7 +31,6 @@ public class CustomerController {
     }
     @GetMapping
     public ResponseEntity<List<CustomerResponse>> findAll(){
-
         return ResponseEntity.ok(customerServices.getAllCustomer());
     }
     @GetMapping("/exits/{customer-id}")
@@ -39,8 +38,8 @@ public class CustomerController {
         return ResponseEntity.ok(customerServices.exitsById(customerId));
     }
 
-    @GetMapping("/exits/{customer-id}")
-    public ResponseEntity<?> findById(@PathVariable("customer-id") String customerId){
+    @GetMapping("/delete/{customer-id}")
+    public ResponseEntity<?> deleteCustomer(@PathVariable("customer-id") String customerId){
         customerServices.deleteCustomer(customerId);
         return ResponseEntity.accepted().build();
     }

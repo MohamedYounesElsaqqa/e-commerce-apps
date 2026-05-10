@@ -65,14 +65,6 @@
       <session name="Session 1" id="208a0c2b-5b3e-47cb-85b2-3259f80f0200" />
     </connection>
   </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="87713cf1-e016-44b3-84d4-5fe81ed2d45f" dataset="product.flyway_schema_history" active-filter-id="07dc16dc-9457-4f10-9faa-fe3ca8bf6df5">
-      <filter id="07dc16dc-9457-4f10-9faa-fe3ca8bf6df5" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="installed_by" operator="like" value="" active="true" />
-      </filter>
-    </filter-actions>
-    <filter-actions connection-id="87713cf1-e016-44b3-84d4-5fe81ed2d45f" dataset="product.product" active-filter-id="" />
-  </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>

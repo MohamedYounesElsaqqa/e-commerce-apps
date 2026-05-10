@@ -1,6 +1,5 @@
 package com.gohar.ecommerce.product;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/customer")
+@RequestMapping("/api/v1/product")
 public class ProductController {
     private final ProductServices productServices;
 
@@ -33,9 +33,7 @@ public class ProductController {
         return  ResponseEntity.ok(productServices.findById(productId));
     }
     @PostMapping("/purchase")
-    public ResponseEntity<List<ProductPurchaseResponse>> purchaseProducts(
-            @RequestBody List<ProductPurchaseRequest> productPurchaseRequests
-    ){
+    public ResponseEntity<List<ProductPurchaseResponse>> purchaseProducts(@RequestBody List<ProductPurchaseRequest> productPurchaseRequests){
         return ResponseEntity.ok(productServices.purchaseProducts(productPurchaseRequests));
     }
 }
